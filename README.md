@@ -6,3 +6,7 @@ Simple Node.js Project to show how microservices architecture can be build and d
 ```
 docker-compose up
 ```
+
+- stop all the docker instances
+docker-compose stop
+
