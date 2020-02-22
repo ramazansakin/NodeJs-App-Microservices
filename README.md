@@ -8,5 +8,9 @@ docker-compose up
 ```
 
 - stop all the docker instances
+```
 docker-compose stop
+```
 
+- If you have a problem about sharing local drives for dockers on windows, you can try this:
+![Sharing volumes problem - win](.\SS\Capture-1.PNG)
