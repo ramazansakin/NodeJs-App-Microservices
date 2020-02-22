@@ -1,0 +1,52 @@
+version: '3'
+services:
+  lb:
+    image: dockercloud/haproxy
+    links:
+      - api-gateway
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - 80:80
+      - 443:443
+    restart: on-failure
+
+  api-gateway:
+    build:
+      context: .
+      dockerfile: development.Dockerfile
+    image: microservices-workshop/api-gateway:dev
+    restart: on-failure
+    environment:
+      - VIRTUAL_HOST=api-gateway.app.com
+    ports:
+      - 3000:3000
+    volumes:
+      - ./api-gateway:/app/src
+
+  delivery-service:
+    build:
+      context: .
+      dockerfile: development.Dockerfile
+    image: microservices-workshop/delivery-service:dev
+    restart: on-failure
+    volumes:
+      - ./delivery-service:/app/src
+
+  order-service:
+    build:
+      context: .
+      dockerfile: development.Dockerfile
+    image: microservices-workshop/order-service:dev
+    restart: on-failure
+    volumes:
+      - ./order-service:/app/src
+
+  restaurants-service:
+    build:
+      context: .
+      dockerfile: development.Dockerfile
+    image: microservices-workshop/restaurants-service:dev
+    restart: on-failure
+    volumes:
+      - ./restaurants-service:/app/src
