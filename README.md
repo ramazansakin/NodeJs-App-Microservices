@@ -22,9 +22,9 @@ docker-compose stop
 ## Api tests on Postman:
 ### get All Restaurans
 
-![getAllRestaurants](https://github.com/ramazansakin/NodeJs-App-Microservices/blob/master/SS/Capture-1.PNG)
+![getAllRestaurants](https://github.com/ramazansakin/NodeJs-App-Microservices/blob/master/SS/Capture-2.PNG)
 
 ### post an order
 
-![postOrder](https://github.com/ramazansakin/NodeJs-App-Microservices/blob/master/SS/Capture-1.PNG)
+![postOrder](https://github.com/ramazansakin/NodeJs-App-Microservices/blob/master/SS/Capture-3.PNG)
 
