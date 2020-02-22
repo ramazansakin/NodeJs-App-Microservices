@@ -6,11 +6,15 @@ Simple Node.js Project to show how microservices architecture can be build and d
 ```
 docker-compose up
 ```
+![getAllRestaurants](https://github.com/ramazansakin/NodeJs-App-Microservices/blob/master/SS/Capture-4.PNG)
+
 
 - stop all the docker instances
 ```
 docker-compose stop
 ```
+![getAllRestaurants](https://github.com/ramazansakin/NodeJs-App-Microservices/blob/master/SS/Capture-5.PNG)
+
 
 - If you have a problem about sharing local drives for dockers on windows, you can try this:
   Docker -> Settings -> Resources -> File Sharing
@@ -20,11 +24,11 @@ docker-compose stop
 
 
 ## Api tests on Postman:
-### get All Restaurans
+### get All Restaurants Api
 
 ![getAllRestaurants](https://github.com/ramazansakin/NodeJs-App-Microservices/blob/master/SS/Capture-2.PNG)
 
-### post an order
+### Post order Api
 
 ![postOrder](https://github.com/ramazansakin/NodeJs-App-Microservices/blob/master/SS/Capture-3.PNG)
 
