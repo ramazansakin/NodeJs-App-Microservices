@@ -20,7 +20,7 @@ docker-compose stop
   Docker -> Settings -> Resources -> File Sharing
     If the checkbox is not clicked, click and Apply & Restart Docker
 
-[problem about sharing local drives for dockers](https://stackoverflow.com/questions/44099509/error-while-sharing-local-drivevolume-with-docker-for-windows)
+[Problem solved - Stackoverflow ](https://stackoverflow.com/questions/44099509/error-while-sharing-local-drivevolume-with-docker-for-windows)
 ![Sharing volumes problem - win](https://github.com/ramazansakin/NodeJs-App-Microservices/blob/master/SS/Capture-1.PNG)
 
 
