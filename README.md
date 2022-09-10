@@ -37,3 +37,8 @@ If the checkbox is not clicked, click and Apply & Restart Docker
 
 ![postOrder](https://github.com/ramazansakin/NodeJs-App-Microservices/blob/master/SS/Capture-3.PNG)
 
+
+
+### Infrastructure model
+
+![Infrastructure model](.infragenie/infrastructure_model.png)
