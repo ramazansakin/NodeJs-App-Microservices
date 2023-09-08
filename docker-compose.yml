@@ -1,4 +1,4 @@
-version: '3'
+version: '3.9'
 services:
   lb:
     image: dockercloud/haproxy
@@ -12,10 +12,8 @@ services:
     restart: on-failure
 
   api-gateway:
-    build:
-      context: .
-      dockerfile: development.Dockerfile
-    image: microservices-workshop/api-gateway:dev
+    container_name: api-gateway
+    image: microservices-workshop:dev
     restart: on-failure
     environment:
       - VIRTUAL_HOST=api-gateway.app.com
@@ -25,28 +23,22 @@ services:
       - ./api-gateway:/app/src
 
   delivery-service:
-    build:
-      context: .
-      dockerfile: development.Dockerfile
-    image: microservices-workshop/delivery-service:dev
+    container_name: delivery-service
+    image: microservices-workshop:dev
     restart: on-failure
     volumes:
       - ./delivery-service:/app/src
 
   order-service:
-    build:
-      context: .
-      dockerfile: development.Dockerfile
-    image: microservices-workshop/order-service:dev
+    container_name: order-service
+    image: microservices-workshop:dev
     restart: on-failure
     volumes:
       - ./order-service:/app/src
 
   restaurants-service:
-    build:
-      context: .
-      dockerfile: development.Dockerfile
-    image: microservices-workshop/restaurants-service:dev
+    container_name: restaurants-service
+    image: microservices-workshop:dev
     restart: on-failure
     volumes:
       - ./restaurants-service:/app/src
