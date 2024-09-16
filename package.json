@@ -14,9 +14,9 @@
   },
   "homepage": "https://github.com/dashersw/microservices-workshop#readme",
   "dependencies": {
-    "body-parser": "^1.20.1",
+    "body-parser": "^1.20.3",
     "cote": "^1.0.3",
-    "express": "^4.19.2"
+    "express": "^4.21.0"
   },
   "devDependencies": {
     "axios": ">=1.6.0",
