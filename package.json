@@ -19,7 +19,7 @@
     "express": "^4.21.0"
   },
   "devDependencies": {
-    "axios": ">=1.6.0",
+    "axios": ">=1.7.4",
     "lodash": ">=4.17.21"
   }
 }
